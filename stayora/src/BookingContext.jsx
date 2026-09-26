@@ -62,7 +62,7 @@ export function BookingProvider({ children }) {
     if (Object.keys(newErrors).length > 0) return false;
 
     try {
-      const res = await fetch("/api/bookings", {
+      const res = await fetch("https://stayora-playpower.onrender.com/api/bookings" , {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
